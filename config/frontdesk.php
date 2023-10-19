@@ -1,8 +1,11 @@
 <?php
 
-/*
- * You can place your custom package configuration in here.
- */
-return [
+use Plank\Frontdesk\Models\Hyperlink;
+use Plank\Frontdesk\Models\Menu;
 
+return [
+    'models' => [
+        'hyperlink' => Hyperlink::class,
+        'menu' => Menu::class
+    ]
 ];
