@@ -12,6 +12,10 @@ class FrontdeskServiceProvider extends PackageServiceProvider
         $package
             ->name('frontdesk')
             ->hasConfigFile()
-            ->hasMigration('create_navigations_table');
+            ->hasMigrations([
+                'create_menus_table',
+                'create_menuables_table',
+                'create_hyperlinks_table',
+            ]);
     }
 }
