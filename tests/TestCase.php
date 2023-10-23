@@ -29,9 +29,23 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_frontdesk_table.php.stub';
+        // Built-in model migrations
+        $migration = include __DIR__.'/../database/migrations/create_menus_table.php.stub';
         $migration->up();
-        */
+
+        $migration = include __DIR__.'/../database/migrations/create_hyperlinks_table.php.stub';
+        $migration->up();
+
+        $migration = include __DIR__.'/../database/migrations/create_menuables_table.php.stub';
+        $migration->up();
+
+
+        // Test model migrations
+        $migration = include __DIR__.'/Database/Migrations/create_articles_table.php';
+        $migration->up();
+
+        $migration = include __DIR__.'/Database/Migrations/create_pages_table.php';
+        $migration->up();
+
     }
 }
