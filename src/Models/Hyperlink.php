@@ -34,12 +34,4 @@ class Hyperlink extends Model implements HyperlinkInterface
         $hyperlinkModel = config('frontdesk.models.hyperlink');
         return $this->hasMany($hyperlinkModel, 'parent_id');
     }
-
-    /**
-     * @return string
-     */
-    public function render(): string
-    {
-        return "<a href='{$this->destination}'>{$this->title}</a>";
-    }
 }
