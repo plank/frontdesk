@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Plank\Frontdesk\Contracts\HyperlinkInterface;
 
-class Hyperlink extends Model
+class Hyperlink extends Model implements HyperlinkInterface
 {
     protected $guarded = ['id'];
 
