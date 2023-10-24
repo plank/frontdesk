@@ -7,16 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Plank\Frontdesk\Models\Menu;
 
 /**
  * @property int|string $id
  * @property int|string $parent_id
  * @property-read Collection<Linkable> $linkable
  * @property-read Collection<Menu> $menu
- * @property-read Model&HyperlinkInterface|null $parent
- * @property-read Collection<Model&HyperlinkInterface> $children
+ * @property-read Model&LinksToContent|null $parent
+ * @property-read Collection<Model&LinksToContent> $children
  */
-interface HyperlinkInterface
+interface LinksToContent
 {
     public function linkable(): MorphTo;
 

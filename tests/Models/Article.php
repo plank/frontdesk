@@ -5,10 +5,10 @@ namespace Plank\Frontdesk\Tests\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Plank\Frontdesk\Concerns\IsLinkable;
-use Plank\Frontdesk\Contracts\LinkableInterface;
+use Plank\Frontdesk\Contracts\Linkable;
 use Plank\Frontdesk\Tests\Database\Factories\ArticleFactory;
 
-class Article extends Model implements LinkableInterface
+class Article extends Model implements Linkable
 {
     use IsLinkable;
     use HasFactory;

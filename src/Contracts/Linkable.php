@@ -11,9 +11,11 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
  * @property-read string $linkTitle
  * @property-read string $linkUrl
  */
-interface LinkableInterface
+interface Linkable
 {
     public function hyperlinks(): MorphMany;
+
     public function linkTitle(): Attribute;
+
     public function linkUrl(): Attribute;
 }

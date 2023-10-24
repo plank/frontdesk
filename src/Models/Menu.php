@@ -5,9 +5,9 @@ namespace Plank\Frontdesk\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Plank\Frontdesk\Contracts\MenuInterface;
+use Plank\Frontdesk\Contracts\AggregatesLinks;
 
-class Menu extends Model implements MenuInterface
+class Menu extends Model implements AggregatesLinks
 {
     use HasFactory;
 

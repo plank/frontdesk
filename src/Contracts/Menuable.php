@@ -4,7 +4,7 @@ namespace Plank\Frontdesk\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
-interface MenuableInterface
+interface Menuable
 {
     public function menus(): MorphToMany;
 }
