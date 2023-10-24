@@ -15,6 +15,21 @@ class Hyperlink extends Model implements LinksToContent
 
     protected $guarded = ['id'];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function (LinksToContent $hyperlink) {
+            if ($hyperlink->title === null && $hyperlink->linkable !== null) {
+                $hyperlink->title = $hyperlink->linkable->linkTitle;
+            }
+
+            if ($hyperlink->destination === null && $hyperlink->linkable !== null) {
+                $hyperlink->destination = $hyperlink->linkable->linkUrl;
+            }
+        });
+    }
+
     public function linkable(): MorphTo
     {
         return $this->morphTo();
