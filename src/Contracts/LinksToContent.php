@@ -12,6 +12,8 @@ use Plank\Frontdesk\Models\Menu;
 /**
  * @property int|string $id
  * @property int|string $parent_id
+ * @property string $title
+ * @property string $destination
  * @property-read Collection<Linkable> $linkable
  * @property-read Collection<Menu> $menu
  * @property-read Model&LinksToContent|null $parent
