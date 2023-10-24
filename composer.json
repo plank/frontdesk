@@ -3,7 +3,9 @@
     "description": "",
     "keywords": [
         "plank",
-        "frontdesk"
+        "frontdesk",
+        "laravel",
+        "navigation"
     ],
     "homepage": "https://github.com/plank/frontdesk",
     "license": "MIT",
@@ -11,7 +13,12 @@
     "authors": [
         {
             "name": "Massimo Triassi",
-            "email": "test@example.com",
+            "email": "massimo.triassi@plankdesign.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Kurt Friars",
+            "email": "kurt.friars@plankdesign.com",
             "role": "Developer"
         }
     ],
