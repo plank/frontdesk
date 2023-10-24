@@ -33,3 +33,12 @@ it('can have many hyperlinks reference it', function () {
         expect($hyperlink->destination)->toBe("https://example.com/{$article->id}");
     });
 });
+
+
+it('can infer the title and destination if they arent provided', function () {
+   $article = Article::factory()->create();
+
+   $article->hyperlinks()->create();
+
+    expect($article->hyperlinks->count())->toBe(1);
+});
