@@ -17,7 +17,6 @@ trait HasMenus
      */
     public function menus(): MorphToMany
     {
-        /** @var $this Model */
         return $this->morphToMany(Menu::class, 'menuable')
             ->orderByPivot('order');
     }
