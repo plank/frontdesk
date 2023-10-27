@@ -1,12 +1,15 @@
-# Frontdesk
-
+<p align="center"><a href="https://plank.co"><img src="https://raw.githubusercontent.com/plank/frontdesk/main/.github/img-frontdesk%402x.png" width="100%"></a></p>
 <p align="center">
 <a href="https://packagist.org/packages/plank/frontdesk"><img src="https://img.shields.io/packagist/php-v/plank/frontdesk?color=%23fae370&label=php&logo=php&logoColor=%23fff" alt="PHP Version Support"></a>
 <a href="https://github.com/plank/frontdesk/actions?query=workflow%3Arun-tests"><img src="https://img.shields.io/github/actions/workflow/status/plank/frontdesk/run-tests.yml?branch=main&&color=%23bfc9bd&label=run-tests&logo=github&logoColor=%23fff" alt="GitHub Workflow Status"></a>
 <a href="https://codeclimate.com/github/plank/frontdesk/test_coverage"><img src="https://img.shields.io/codeclimate/coverage/plank/frontdesk?color=%23ff9376&label=test%20coverage&logo=code-climate&logoColor=%23fff" /></a>
 <a href="https://codeclimate.com/github/plank/frontdesk/maintainability"><img src="https://img.shields.io/codeclimate/maintainability/plank/frontdesk?color=%23528cff&label=maintainablility&logo=code-climate&logoColor=%23fff" /></a>
 </p>
-Frontdesk allows you to build a navigation bar using models within your Laravel application. 
+
+
+# Frontdesk
+Frontdesk simplifies the way you build a navigation bar using models within your Laravel application. Frontdesk treats a Navigation menu
+like any other model, so you can have total, and dynamic control over the contents of your menus.
 
 
 ## Installation
