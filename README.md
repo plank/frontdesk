@@ -8,7 +8,7 @@
 
 
 # Frontdesk
-Frontdesk simplifies the way you build a navigation bar using models within your Laravel application. Frontdesk treats a Navigation menu
+Frontdesk simplifies the way you build a navigation bar using models within your Laravel application. Frontdesk treats a navigation menu
 like any other model, so you can have total, and dynamic control over the contents of your menus.
 
 
