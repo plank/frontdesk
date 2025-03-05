@@ -3,17 +3,17 @@
 namespace Plank\Frontdesk\Concerns;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Plank\Frontdesk\Models\Hyperlink;
+use Plank\Frontdesk\Contracts\LinksToContent;
 
 /**
  * @mixin \Illuminate\Database\Eloquent\Model
  *
- * @property-read \Illuminate\Database\Eloquent\Collection<Hyperlink> $hyperlinks
+ * @property-read \Illuminate\Database\Eloquent\Collection<LinksToContent> $hyperlinks
  */
 trait IsLinkable
 {
     public function hyperlinks(): MorphMany
     {
-        return $this->morphMany(Hyperlink::class, 'linkable');
+        return $this->morphMany(config('frontdesk.models.hyperlink'), 'linkable');
     }
 }
