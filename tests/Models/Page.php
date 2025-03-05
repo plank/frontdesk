@@ -10,8 +10,8 @@ use Plank\Frontdesk\Tests\Database\Factories\PageFactory;
 
 class Page extends Model implements Menuable
 {
-    use HasMenus;
     use HasFactory;
+    use HasMenus;
 
     protected $guarded = ['id'];
 

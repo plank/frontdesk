@@ -11,8 +11,8 @@ use Plank\Frontdesk\Tests\Database\Factories\ArticleFactory;
 
 class Article extends Model implements Linkable
 {
-    use IsLinkable;
     use HasFactory;
+    use IsLinkable;
 
     protected $guarded = ['id'];
 

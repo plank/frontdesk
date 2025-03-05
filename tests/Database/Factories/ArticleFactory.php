@@ -3,7 +3,6 @@
 namespace Plank\Frontdesk\Tests\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 use Plank\Frontdesk\Tests\Models\Article;
 
 /**
@@ -22,7 +21,7 @@ class ArticleFactory extends Factory
     {
         return [
             'title' => fake()->words(1, true),
-            'body' => fake()->text(100)
+            'body' => fake()->text(100),
         ];
     }
 }

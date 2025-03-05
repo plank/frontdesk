@@ -15,5 +15,4 @@ class MenuFactory extends Factory
             'identifier' => $this->faker->word(),
         ];
     }
-
 }

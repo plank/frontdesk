@@ -4,7 +4,6 @@ namespace Plank\Frontdesk\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Plank\Contentable\ContentableServiceProvider;
 use Plank\Frontdesk\FrontdeskServiceProvider;
 
 class TestCase extends Orchestra
@@ -38,7 +37,6 @@ class TestCase extends Orchestra
 
         $migration = include __DIR__.'/../database/migrations/create_menuables_table.php.stub';
         $migration->up();
-
 
         // Test model migrations
         $migration = include __DIR__.'/Database/Migrations/create_articles_table.php';
