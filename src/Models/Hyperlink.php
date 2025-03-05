@@ -38,24 +38,28 @@ class Hyperlink extends Model implements LinksToContent
     public function menu(): BelongsTo
     {
         $menuClass = config('frontdesk.models.menu');
+
         return $this->belongsTo($menuClass);
     }
 
     public function parent(): BelongsTo
     {
         $hyperlinkModel = config('frontdesk.models.hyperlink');
+
         return $this->belongsTo($hyperlinkModel);
     }
 
     public function children(): HasMany
     {
         $hyperlinkModel = config('frontdesk.models.hyperlink');
+
         return $this->hasMany($hyperlinkModel, 'parent_id');
     }
 
     protected static function newFactory()
     {
         $factory = config('frontdesk.factories.hyperlink');
+
         return $factory::new();
     }
 }

@@ -21,9 +21,10 @@ class PageFactory extends Factory
     public function definition(): array
     {
         $title = fake()->words(1, true);
+
         return [
             'title' => $title,
-            'slug' => Str::slug($title)
+            'slug' => Str::slug($title),
         ];
     }
 }

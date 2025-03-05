@@ -16,12 +16,14 @@ class Menu extends Model implements AggregatesLinks
     public function hyperlinks(): HasMany
     {
         $hyperlinkModel = config('frontdesk.models.hyperlink');
+
         return $this->hasMany($hyperlinkModel);
     }
 
     protected static function newFactory()
     {
         $factory = config('frontdesk.factories.menu');
+
         return $factory::new();
     }
 }

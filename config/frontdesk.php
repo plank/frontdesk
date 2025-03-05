@@ -8,10 +8,10 @@ use Plank\Frontdesk\Tests\Database\Factories\MenuFactory;
 return [
     'models' => [
         'hyperlink' => Hyperlink::class,
-        'menu' => Menu::class
+        'menu' => Menu::class,
     ],
     'factories' => [
         'hyperlink' => HyperlinkFactory::class,
-        'menu' => MenuFactory::class
-    ]
+        'menu' => MenuFactory::class,
+    ],
 ];

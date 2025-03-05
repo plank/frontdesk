@@ -19,5 +19,4 @@ class HyperlinkFactory extends Factory
             'linkable_id' => Page::factory(),
         ];
     }
-
 }

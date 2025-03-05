@@ -2,11 +2,10 @@
 
 use Plank\Frontdesk\Models\Menu;
 use Plank\Frontdesk\Tests\Models\Article;
-use Plank\Frontdesk\Tests\Models\Page;
 
 it('can fetch hyperlinks via its relationship', function () {
     $menu = Menu::create([
-        'identifier' => 'test'
+        'identifier' => 'test',
     ]);
 
     $article1 = Article::factory()->create();
@@ -15,13 +14,13 @@ it('can fetch hyperlinks via its relationship', function () {
     $link1 = $article1->hyperlinks()->create([
         'title' => $article1->title,
         'destination' => "https://example.com/{$article1->id}",
-        'menu_id' => $menu->id
+        'menu_id' => $menu->id,
     ]);
 
     $link2 = $article2->hyperlinks()->create([
         'title' => $article2->title,
         'destination' => "https://example.com/{$article2->id}",
-        'menu_id' => $menu->id
+        'menu_id' => $menu->id,
     ]);
 
     expect($menu->hyperlinks->count())->toBe(2);
